@@ -40,4 +40,33 @@ e4-=e3; // 0-160000 = -160000
 e4=-(e4); // -(-160000) == 160000 , it is called unary operator to sign change
 System.out.println(e3); // 160000
 System.out.println(e4); // 160000
+
+    
+// logical operator and comparison ( relational ) operators :
+Comparison (Relational) Operators: Compare values and return true or false. Examples include equal to (==), not equal to (!=), greater than (>), less than (<), greater than or equal to (>=), and less than or equal to (<=).
+Logical Operators: Combine boolean expressions, including logical AND (&&), logical OR (||), and logical NOT (!).
+// in comparison operator we perform two operations either == or != , lets understand them both
+  int is1=32;
+  int is2=33;
+  boolean isSo= is1==is2; // false
+  boolean isSo1= is1!=is2; // true as 32 != 33
+
+// in logical operators we combine boolean and logical operations 
+  // 0 and 1 = 0  , 0 or 1 = 1 , if a=false then !a = true , false = 0 and true = 1 
+  boolean aIs=true;
+  boolean bIs=false;
+  System.out.println(aIs && bIs); // false
+  System.out.println(aIs || bIs); // true
+  System.out.println(!aIs); // false
+  System.out.println(!bIs); // true
+
+
+
+
+
+
+
+
+
+    
 }}

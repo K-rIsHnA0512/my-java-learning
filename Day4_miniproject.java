@@ -1,4 +1,3 @@
-import javagenesis;
 import java.util.Scanner;
 public class Day4_miniproject{
     public static void main(String[]  args){

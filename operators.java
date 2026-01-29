@@ -1,4 +1,3 @@
-package javagenesis;
 public class operators{
   public static void main(String[] args){
     // lets learn about operators now 
@@ -60,13 +59,36 @@ Logical Operators: Combine boolean expressions, including logical AND (&&), logi
   System.out.println(!aIs); // false
   System.out.println(!bIs); // true
 
-
-
-
-
-
-
-
-
+    
+ //we will learn about shift operators , there are three types of shift operators which shifts bits ( binary representation of number ) either left or right 
+        // Operator	Name
+        // <<	Left Shift            // it works same for both positive and negative numbers
+        // >>	Signed Right Shift   // for  positive numbers >>> and >> works same
+        // >>>	Unsigned Right Shift // works as 2's compliment for negative numbers 
+        // shift operators don't do work for floats , double numbers
+        
+        
+        
+        int takeShift=10; // in Binary we represent 10  as 01010
+        takeShift>>=1; //00101
+        System.out.println("After shifting one bit toward Right : "+takeShift ); // output - 5
+        takeShift<<=1; // 01010
+        System.out.println("After shifting one bit toward Left : "+takeShift ); // output - 10
+        // let's take another example
+        int takeShift2 = -9;
+        // Note , in binary number representation , in positive integers , 0 is before the number representation , example : 0000101 this is 5
+        // in negative integer representation , 1 is before the number example 10000000101 it  is -5
+        takeShift2>>=1; // can you guess the output ?
+        System.out.println("After shifting one bit toward right : "+takeShift2 );
+        takeShift2<<=1;
+        System.out.println("After shifting one bit toward left : "+takeShift2 );
+        // let's now check the last of shift-operators :
+        int takeShift3 = -10; // this is (-)10 10000001010
+        takeShift3=takeShift3>>>1;// can you guess the output ? it will be a large positive number cause it gets 2's compliment ( flips the bit and changes the sign )
+        System.out.println("After shifting one bit toward right : "+takeShift3);
+        // let's try >>> for a positive number
+        takeShift>>>=1;
+        System.out.println("After shifting : " + takeShift ); // 01010  to 00101 , did you notice it , >>> behaves same as >> for positive numbers
+        
     
 }}
